@@ -10,6 +10,29 @@
 </head>
 
 <body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyC-e1EPLX9NTTij9B6zYngHtvKBQ6o12OU",
+            authDomain: "intellicomerce.firebaseapp.com",
+            projectId: "intellicomerce",
+            storageBucket: "intellicomerce.appspot.com",
+            messagingSenderId: "882744035684",
+            appId: "1:882744035684:web:27fab88e5ba6840d9b9271",
+            measurementId: "G-LLB8R9XB3D"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
     <div class="container">
         <div class="top">
             <div class="row mt-5">
